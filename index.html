@@ -5,25 +5,34 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <h1 class="visually-hidden">ToDo App</h1>
-    <div class="aaa"><img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix"><a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></div>
     <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
-        <h2 class="title">
-          <label for="new-task">Add Item</label>
-        </h2>
-        <div class="task-row-wrapper"><input id="new-task" class="task" type="text"><button class="button">Add</button></div>
-      </p>
-      <h2 class="title">Todo</h2>
-      <ul class="incompleteTasks">
-        <li><input class="input_checkbox" type="checkbox"><label class="task">Pay Bills</label><input class="input_text" type="text" class="task"><button class="button button_edit">Edit</button><button class="button button_delete"><img class="button__img" src="./remove.svg" alt=""></button></li>
-        <li class="editMode"><input type="checkbox"><label class="task">Go Shopping</label><input class="input_text" type="text" value="Go Shopping" class="task"><button class="button button_edit" >Save</button><button class="button button_delete"><img class="button__img" src="./remove.svg" alt=""></button></li>
-      </ul>
-      <h2 class="title">Completed</h2>
-      <ul class="completed-tasks">
-        <li><input class="input_checkbox"   type="checkbox" checked><label class="task">See the Doctor</label><input class="input_text" type="text" class="task"><button class="button button_edit">Edit</button><button class="button button_delete"><img class="button__img" src="./remove.svg" alt=""></button>
-        </li>
-      </ul>
+      <h1 class="visually-hidden">ToDo App</h1>
+      <article class="aaa">
+        <h2 class='visually-hidden'>Eisenhower matrix</h2>
+        <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix"><a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      </article>
+      <section class="adding">
+        <p id="topSectionForAddingElementToList">
+          <h2 class="title">
+            <label for="new-task">Add Item</label>
+          </h2>
+          <div class="task-row-wrapper"><input id="new-task" class="task" type="text"><button class="button">Add</button></div>
+        </p>
+      </section>
+      <section class="todo">
+        <h2 class="title">Todo</h2>
+        <ul class="incompleteTasks">
+          <li><input class="input_checkbox" type="checkbox"><label class="task">Pay Bills</label><input class="input_text" type="text" class="task"><button class="button button_edit">Edit</button><button class="button button_delete"><img class="button__img" src="./remove.svg" alt=""></button></li>
+          <li class="editMode"><input type="checkbox"><label class="task">Go Shopping</label><input class="input_text" type="text" value="Go Shopping" class="task"><button class="button button_edit" >Save</button><button class="button button_delete"><img class="button__img" src="./remove.svg" alt=""></button></li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="title">Completed</h2>
+        <ul class="completed-tasks">
+          <li><input class="input_checkbox"   type="checkbox" checked><label class="task">See the Doctor</label><input class="input_text" type="text" class="task"><button class="button button_edit">Edit</button><button class="button button_delete"><img class="button__img" src="./remove.svg" alt=""></button>
+          </li>
+        </ul>
+      </section>
     </div>
     <script src="app.js"></script>
   </body>
