@@ -8,9 +8,9 @@
 // Event handling, user interaction is what starts the code execution.
 
 var taskInput=document.getElementById('new-task');//Add a new task.
-var addButton=document.getElementsByTagName('button')[0];//first button
-var incompleteTaskHolder=document.getElementById('incompleteTasks');//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById('completed-tasks');//completed-tasks
+var addButton=document.querySelectorAll('.button')[0];//first button
+var incompleteTaskHolder=document.querySelector('.incompleteTasks');//ul of #incompleteTasks
+var completedTasksHolder=document.querySelector('.completed-tasks');//completed-tasks
 
 
 //New task list item
@@ -76,7 +76,7 @@ var addTask=function(){
 
 var editTask=function(){
     console.log('Edit Task...');
-    console.log('Change 'edit' to 'save'');
+    console.log(`Change 'edit' to 'save'`);
 
 
     var listItem=this.parentNode;
@@ -155,8 +155,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log('bind list item events');
 //select ListItems children
     var checkBox=taskListItem.querySelector('input[type=checkbox]');
-    var editButton=taskListItem.querySelector('button.edit');
-    var deleteButton=taskListItem.querySelector('button.delete');
+    var editButton=taskListItem.querySelector('.button_edit');
+    var deleteButton=taskListItem.querySelector('.button_delete');
 
 
     //Bind editTask to edit button.
